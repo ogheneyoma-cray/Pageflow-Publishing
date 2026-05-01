@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { Menu, X, ShoppingCart, Home } from "lucide-react";
+import { Menu, X, ShoppingCart } from "lucide-react";
 import { useCart } from "@/context/CartContext";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -24,11 +24,15 @@ export default function Navbar() {
 
         {/* LOGO */}
         <Link href="/" className="flex items-center gap-3 group">
-          <div className="w-10 h-10 bg-linear-to-br from-brand-teal to-brand-teal/60 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-xl transition-shadow">
-            <Home size={24} className="text-brand-dark" />
-          </div>
+          <Image 
+            src="/logo.png" 
+            alt="Walkzen Logo" 
+            width={40} 
+            height={40} 
+            className="object-contain" 
+          />
           <span className="font-display text-xl font-bold tracking-tight bg-linear-to-r from-brand-teal to-brand-teal/80 bg-clip-text text-transparent">
-            CALVEXA
+          WALKZEN
           </span>
         </Link>
 

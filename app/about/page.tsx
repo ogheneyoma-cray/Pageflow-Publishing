@@ -12,25 +12,20 @@ export default function AboutPage() {
         className="max-w-3xl mx-auto"
       >
         <h1 className="font-display text-5xl md:text-6xl font-bold mb-10 leading-tight">
-          Our Story: Bringing Comfort Home
+          Our Story
         </h1>
         <p className="text-brand-gray text-lg leading-relaxed mb-8">
-          At Calvexa Home Living, we understand that a home is more than just a physical space; it is your sanctuary, your gathering place, and your personal canvas. Founded on the belief that everyone deserves to live in a beautifully functional environment, Calvexa was born out of a passion for modern interior design and everyday utility.
+          Walkzen Footwear was born from a simple realization: the modern world demands constant motion, yet most footwear isn`t built to keep up comfortably. We grew tired of choosing between shoes that looked great but caused blisters, and shoes that felt great but lacked style. So, we set out to engineer the perfect balance.
         </p>
         
         <h2 className="font-display text-3xl font-bold mt-12 mb-6 text-brand-teal">Our Mission</h2>
         <p className="text-brand-gray text-lg leading-relaxed mb-12">
-          To provide homeowners with accessible, high-quality, and beautifully designed household items that enhance their daily routines and elevate their living spaces.
+          To empower people to move through their days with confidence, comfort, and zero distractions. We are dedicated to creating high-quality, ethically produced footwear that supports your physical well-being while elevating your personal style.
         </p>
         
-        <h2 className="font-display text-3xl font-bold mb-6 text-brand-teal">Our Vision</h2>
+        <h2 className="font-display text-3xl font-bold mb-6 text-brand-teal">The Art of Shoemaking</h2>
         <p className="text-brand-gray text-lg leading-relaxed mb-12">
-          To be the premier online destination for modern home essentials, recognized for our commitment to quality, aesthetic brilliance, and customer satisfaction. We want the name Calvexa to be synonymous with comfort and style.
-        </p>
-        
-        <h2 className="font-display text-3xl font-bold mb-6 text-brand-teal">What We Stand For</h2>
-        <p className="text-brand-gray text-lg leading-relaxed">
-          We meticulously select each item in our catalog—from our artisan dinnerware to our plush bedding—ensuring it meets our strict standards for durability, sustainability, and design. Welcome to the Calvexa family. Let's make your house feel like home.
+          True comfort is not an accident; it is a science. Our design team works alongside podiatrists to ensure every last, sole, and insole provides optimal support. From the boardroom to the boardwalk, Walkzen Footwear is crafted to be your reliable foundation.
         </p>
       </motion.div>
     </main>

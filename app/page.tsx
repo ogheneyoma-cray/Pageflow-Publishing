@@ -1,38 +1,37 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, ChefHat, Sofa, Bed } from "lucide-react";
+import { ArrowRight, Briefcase, Sparkles, Activity } from "lucide-react";
 import { motion, Variants } from "framer-motion";
 
 const categories = [
   {
-    icon: <ChefHat size={28} />,
-    title: "Kitchenware",
-    desc: "Cook and dine with elegance.",
+    icon: <Briefcase size={28} />,
+    title: "Men’s Collection",
+    desc: "From sharp office oxfords to weekend-ready sneakers.",
   },
   {
-    icon: <Sofa size={28} />,
-    title: "Living Room & Decor",
-    desc: "Add character and cozy comforts.",
+    icon: <Sparkles size={28} />,
+    title: "Women’s Collection",
+    desc: "Elegant heels, versatile boots, and everyday slip-ons.",
   },
   {
-    icon: <Bed size={28} />,
-    title: "Bed & Bath",
-    desc: "Transform your private spaces into luxurious sanctuaries.",
+    icon: <Activity size={28} />,
+    title: "The Athletic Line",
+    desc: "Engineered support for when you need to pick up the pace.",
   },
 ];
 
 const whyChooseUs = [
-  { title: "Premium Quality", desc: "We source only the finest, most durable materials for products built to last." },
-  { title: "Modern Design", desc: "Thoughtfully designed pieces that elevate your interior styling." },
-  { title: "Exceptional Value", desc: "Luxury living essentials without the luxury markup." },
+  { title: "Premium Sourcing", desc: "We source only the finest, most durable materials to ensure your shoes last season after season." },
+  { title: "Built-In Comfort", desc: "With built-in arch support, breathable linings, and shock-absorbing soles in every pair." },
+  { title: "Custom-Made Feel", desc: "We guarantee a fit that feels custom-made from the very first step." },
 ];
 
 const process = [
-  { step: "1", title: "Browse & Inspire", desc: "Explore our curated collections to find the perfect pieces for your aesthetic." },
-  { step: "2", title: "Secure Checkout", desc: "Order with confidence using our safe, encrypted payment portal." },
-  { step: "3", title: "Fast Delivery", desc: "We pack your items with care and ship them swiftly to your doorstep." },
-  { step: "4", title: "Enjoy Your Space", desc: "Unbox, decorate, and fall in love with your newly refreshed home." },
+  { step: "1", title: "Ergonomic Design", desc: "Every shoe begins with studying the natural movement of the human foot." },
+  { step: "2", title: "Premium Sourcing", desc: "We select high-quality leathers, breathable knits, and durable rubber." },
+  { step: "3", title: "Expert Craftsmanship", desc: "Assembled with precision to ensure longevity and superior comfort." },
 ];
 
 const fadeInUp: Variants = {
@@ -76,10 +75,10 @@ export default function HomePage() {
           className="relative z-10 flex flex-col items-center"
         >
           <h1 className="font-display text-5xl md:text-7xl font-bold leading-tight mb-6 max-w-4xl">
-            Elevate Your Everyday Living.
+            Find Your Balance. Step into Comfort.
           </h1>
           <p className="text-brand-gray max-w-2xl text-lg mb-10 leading-relaxed">
-            Discover beautifully crafted, functional household items designed to turn your house into a home you love.
+            Discover Walkzen Footwear—where premium craftsmanship meets ultimate, all-day comfort. Thoughtfully designed shoes for men and women who refuse to compromise on style or well-being.
           </p>
           <Link
             href="/shop"
@@ -99,10 +98,10 @@ export default function HomePage() {
         className="max-w-4xl mx-auto px-6 py-24 text-center"
       >
         <h2 className="font-display text-4xl md:text-5xl font-bold mb-6">
-          Welcome to Calvexa Home Living
+          More Than Just a Shoe.
         </h2>
         <p className="text-brand-gray text-lg leading-relaxed">
-          We believe that the environment you live in shapes the way you feel. That is why Calvexa is dedicated to curating premium household items that blend modern aesthetics with everyday practicality. From the kitchen where you create memories to the bedroom where you recharge, we bring warmth, style, and quality to every corner of your home.
+          We believe that a good day starts from the ground up. At Walkzen Footwear, we design shoes that move naturally with your life. By combining modern aesthetics with ergonomic engineering, we create footwear that feels like a natural extension of your body.
         </p>
       </motion.section>
 
@@ -116,10 +115,10 @@ export default function HomePage() {
             variants={fadeInUp}
           >
             <h2 className="font-display text-4xl md:text-5xl font-bold text-center mb-6">
-              Explore Your Home's Potential
+              Crafted for Every Journey
             </h2>
             <p className="text-brand-gray text-center mb-16 text-lg">
-              Find exactly what you need to refresh your space.
+              Explore our diverse ranges tailored to fit your lifestyle.
             </p>
           </motion.div>
           <motion.div 
@@ -155,7 +154,7 @@ export default function HomePage() {
           variants={fadeInUp}
           className="font-display text-4xl font-bold text-center mb-16"
         >
-          The <span className="text-brand-teal">Calvexa Standard</span>
+          The <span className="text-brand-teal">Walkzen Promise</span>
         </motion.h2>
         <motion.div 
           variants={staggerContainer}
@@ -183,7 +182,7 @@ export default function HomePage() {
             variants={fadeInUp}
             className="font-display text-4xl font-bold text-center mb-16"
           >
-            How Calvexa Works
+            Designed with Purpose
           </motion.h2>
           <motion.div 
             variants={staggerContainer}
@@ -216,16 +215,16 @@ export default function HomePage() {
         className="py-32 px-6 text-center"
       >
         <h2 className="font-display text-4xl md:text-6xl font-bold mb-6">
-          Ready to Refresh Your Space?
+          Ready to Walk on Clouds?
         </h2>
         <p className="text-brand-gray max-w-xl mx-auto mb-10 text-lg">
-          Join thousands of happy homeowners who have transformed their spaces with Calvexa.
+          Join the Walkzen community today. Sign up for our newsletter to receive early access to new drops and 10% off your first purchase.
         </p>
         <Link
-          href="/shop"
+          href="#"
           className="bg-brand-teal text-brand-dark px-10 py-4 uppercase tracking-widest text-sm font-bold hover:bg-brand-teal-light transition-all inline-block rounded-full"
         >
-          View Best Sellers
+          Subscribe & Save
         </Link>
       </motion.section>
 

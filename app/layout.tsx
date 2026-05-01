@@ -17,9 +17,9 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Calvexa Home Living | Premium Household Essentials",
-  description: "Discover beautifully crafted, functional household items designed to turn your house into a home you love.",
-};
+  title: "Walkzen Footwear | Premium Comfort",
+  description: "Discover premium, comfortable footwear designed for your daily journey.",
+}
 
 export default function RootLayout({
   children,
@@ -28,7 +28,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${playfair.variable} ${dmSans.variable}`}>
-      <body className="bg-brand-dark text-white antialiased">
+      <body className="bg-brand-dark text-white antialiased" suppressHydrationWarning>
         <CartProvider>
           <Navbar />
           {children}

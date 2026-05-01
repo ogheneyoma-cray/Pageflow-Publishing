@@ -16,30 +16,16 @@ export default function PrivacyPage() {
         </h1>
 
         <section className="mb-8">
-          <h2 className="font-display text-2xl font-bold mb-4 text-brand-teal">1. Introduction</h2>
+          <h2 className="font-display text-2xl font-bold mb-4 text-brand-teal">Privacy and Data Protection</h2>
           <p className="text-brand-gray text-lg leading-relaxed">
-            Welcome to Calvexa Home Living. We respect your privacy and are committed to protecting your personal data. This privacy policy will inform you as to how we look after your personal data when you visit our website.
+            At Walkzen Footwear, your privacy is a priority. We collect personal information—such as your name, shipping address, email, and payment details—strictly to process your orders and provide a seamless shopping experience. We utilize secure, encrypted payment gateways and do not store your credit card information on our servers.
           </p>
         </section>
 
         <section className="mb-8">
-          <h2 className="font-display text-2xl font-bold mb-4 text-brand-teal">2. Data We Collect</h2>
+          <h2 className="font-display text-2xl font-bold mb-4 text-brand-teal">Information Sharing</h2>
           <p className="text-brand-gray text-lg leading-relaxed">
-            We may collect, use, store, and transfer different kinds of personal data about you, including Identity Data (name, username), Contact Data (billing address, delivery address, email), Financial Data (payment card details), and Transaction Data (details about payments to and from you).
-          </p>
-        </section>
-
-        <section className="mb-8">
-          <h2 className="font-display text-2xl font-bold mb-4 text-brand-teal">3. How We Use Your Data</h2>
-          <p className="text-brand-gray text-lg leading-relaxed">
-            We will only use your personal data when the law allows us to. Most commonly, we use your data to process and deliver your order, manage our relationship with you, and improve our website, products, and marketing.
-          </p>
-        </section>
-
-        <section className="mb-8">
-          <h2 className="font-display text-2xl font-bold mb-4 text-brand-teal">4. Data Security</h2>
-          <p className="text-brand-gray text-lg leading-relaxed">
-            We have put in place appropriate security measures to prevent your personal data from being accidentally lost, used, or accessed in an unauthorized way.
+            We will never sell, rent, or distribute your personal data to unauthorized third parties. By using the Walkzen Footwear website, you consent to the collection and use of your information as described in this policy.
           </p>
         </section>
       </motion.div>

@@ -9,57 +9,35 @@ export default function ContactPage() {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className="max-w-2xl mx-auto"
+        className="max-w-3xl mx-auto"
       >
-        <h1 className="font-display text-5xl font-bold mb-6">
-          We'd Love to Hear From You
+        <h1 className="font-display text-5xl md:text-6xl font-bold mb-10 leading-tight">
+          Let’s Connect
         </h1>
-        <p className="text-brand-gray mb-10 leading-relaxed">
-          Have a question about a product, your order, or just need some styling advice? The Calvexa customer care team is always here to help. Reach out to us through any of the channels below, and we will get back to you as soon as possible.
+        <p className="text-brand-gray text-lg leading-relaxed mb-12">
+          Have a question about sizing, an existing order, or just want to share how much you love your new shoes? The Walkzen team is always here to help you put your best foot forward. Reach out using the details below or via our direct contact form.
         </p>
-
-        <h2 className="font-display text-2xl font-bold mb-6">Send us a message:</h2>
-        <form className="space-y-5" onSubmit={(e) => e.preventDefault()}>
-          <input
-            type="text"
-            name="name"
-            aria-label="Name"
-            placeholder="Name"
-            className="w-full bg-white/5 border border-white/10 px-5 py-4 text-white placeholder-brand-gray focus:outline-none focus:border-brand-teal transition-colors rounded-lg"
-          />
-          <input
-            type="email"
-            name="email"
-            aria-label="Email"
-            placeholder="Email"
-            className="w-full bg-white/5 border border-white/10 px-5 py-4 text-white placeholder-brand-gray focus:outline-none focus:border-brand-teal transition-colors rounded-lg"
-          />
-          <input
-            type="text"
-            name="subject"
-            aria-label="Subject"
-            placeholder="Subject"
-            className="w-full bg-white/5 border border-white/10 px-5 py-4 text-white placeholder-brand-gray focus:outline-none focus:border-brand-teal transition-colors rounded-lg"
-          />
-          <textarea
-            name="message"
-            aria-label="Message"
-            rows={5}
-            placeholder="Message"
-            className="w-full bg-white/5 border border-white/10 px-5 py-4 text-white placeholder-brand-gray focus:outline-none focus:border-brand-teal transition-colors resize-none rounded-lg"
-          />
-          <button
-            type="submit"
-            className="w-full bg-brand-teal text-brand-dark py-4 font-bold uppercase tracking-widest hover:bg-brand-teal-light transition-colors rounded-lg"
-          >
-            Submit
-          </button>
-        </form>
-
-        <div className="mt-12 space-y-3 text-brand-gray text-sm">
-          <p><strong>Email:</strong> support@calvexa.com</p>
-          <p><strong>Phone:</strong> 1-800-CALVEXA (1-800-225-8392)</p>
-          <p><strong>Business Hours:</strong> Monday – Friday, 9:00 AM – 6:00 PM (EST)</p>
+        
+        <h2 className="font-display text-3xl font-bold mb-6 text-brand-teal">Customer Support Details</h2>
+        <div className="text-brand-gray text-lg leading-relaxed mb-12 space-y-2">
+          <p><strong>Email:</strong> support@walkzenfootwear.com</p>
+          <p><strong>Customer Care Hours:</strong> Monday - Friday, 8:00 AM - 6:00 PM (EST)</p>
+          <p>Please allow up to 24 hours for our team to respond to your inquiry.</p>
+        </div>
+        
+        <div className="bg-white/5 border border-white/10 p-8 rounded-2xl">
+          <h3 className="font-display text-2xl font-bold mb-6">Send us a message</h3>
+          <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <input type="text" placeholder="Name" className="bg-white/5 border border-white/10 rounded-lg p-3 w-full text-white focus:outline-none focus:border-brand-teal transition-colors" />
+              <input type="email" placeholder="Email" className="bg-white/5 border border-white/10 rounded-lg p-3 w-full text-white focus:outline-none focus:border-brand-teal transition-colors" />
+            </div>
+            <input type="text" placeholder="Order Number (Optional)" className="bg-white/5 border border-white/10 rounded-lg p-3 w-full text-white focus:outline-none focus:border-brand-teal transition-colors" />
+            <textarea placeholder="Message" rows={5} className="bg-white/5 border border-white/10 rounded-lg p-3 w-full text-white focus:outline-none focus:border-brand-teal transition-colors"></textarea>
+            <button type="submit" className="bg-brand-teal text-brand-dark px-8 py-3 font-bold uppercase tracking-widest text-sm hover:bg-brand-teal-light transition-all rounded-lg w-full">
+              Submit Message
+            </button>
+          </form>
         </div>
       </motion.div>
     </main>

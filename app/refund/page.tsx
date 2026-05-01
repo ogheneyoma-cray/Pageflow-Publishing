@@ -16,23 +16,16 @@ export default function RefundPage() {
         </h1>
 
         <section className="mb-8">
-          <h2 className="font-display text-2xl font-bold mb-4 text-brand-teal">1. Returns</h2>
+          <h2 className="font-display text-2xl font-bold mb-4 text-brand-teal">30-Day Comfort Guarantee (Returns & Exchanges)</h2>
           <p className="text-brand-gray text-lg leading-relaxed">
-            We have a 30-day return policy, which means you have 30 days after receiving your item to request a return. To be eligible for a return, your item must be in the same condition that you received it, unworn or unused, with tags, and in its original packaging.
+            We want you to be entirely satisfied with your Walkzen shoes. If the fit isn`t perfect, we accept returns and exchanges within 30 days of the delivery date. To be eligible for a full refund, shoes must be unworn (except for trying them on indoors on a clean surface), in their original condition, and returned in the original Walkzen shoebox.
           </p>
         </section>
 
         <section className="mb-8">
-          <h2 className="font-display text-2xl font-bold mb-4 text-brand-teal">2. Damages and Issues</h2>
+          <h2 className="font-display text-2xl font-bold mb-4 text-brand-teal">Processing Refunds</h2>
           <p className="text-brand-gray text-lg leading-relaxed">
-            Please inspect your order upon reception and contact us immediately if the item is defective, damaged, or if you receive the wrong item, so that we can evaluate the issue and make it right.
-          </p>
-        </section>
-
-        <section className="mb-8">
-          <h2 className="font-display text-2xl font-bold mb-4 text-brand-teal">3. Refunds</h2>
-          <p className="text-brand-gray text-lg leading-relaxed">
-            We will notify you once we've received and inspected your return. If approved, you'll be automatically refunded on your original payment method within 7-10 business days.
+            Once we receive and inspect your return at our warehouse, we will initiate a refund to your original payment method. Please allow 5-10 business days for the funds to reflect in your account. Return shipping costs are the responsibility of the customer unless the item received was defective.
           </p>
         </section>
       </motion.div>
