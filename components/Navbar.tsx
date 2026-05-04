@@ -1,116 +1,71 @@
 "use client";
 
-import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
-import { Menu, X, ShoppingCart } from "lucide-react";
+import Link from "next/link";
 import { useCart } from "@/context/CartContext";
-import { motion, AnimatePresence } from "framer-motion";
+import { ShoppingBag, Menu, X } from "lucide-react";
+import Logo from "./Logo";
 
-const links = [
-  { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
-  { href: "/shop", label: "Shop" },
-  { href: "/contact", label: "Contact" },
+const navLinks = [
+    { href: "/", label: "Home" },
+    { href: "/about", label: "About" },
+    { href: "/shop", label: "Shop" },
+    { href: "/contact", label: "Contact" },
 ];
 
 export default function Navbar() {
-  const [open, setOpen] = useState(false);
-  const { totalItems } = useCart();
+    const { totalItems, openCart } = useCart();
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  return (
-    <nav className="fixed top-0 w-full z-50 bg-brand-dark/95 backdrop-blur-md border-b border-white/10">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    return (
+        <header className="fixed top-0 left-0 right-0 z-50 bg-brand-dark/80 backdrop-blur-sm border-b border-white/10">
+            <nav className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+                <Logo />
 
-        {/* LOGO */}
-        <Link href="/" className="flex items-center gap-3 group">
-          <Image 
-            src="/logo.png" 
-            alt="Walkzen Logo" 
-            width={40} 
-            height={40} 
-            className="object-contain" 
-          />
-          <span className="font-display text-xl font-bold tracking-tight bg-linear-to-r from-brand-teal to-brand-teal/80 bg-clip-text text-transparent">
-          WALKZEN
-          </span>
-        </Link>
+                <div className="hidden md:flex items-center gap-6">
+                    <nav className="flex items-center gap-6">
+                        {navLinks.map((link) => (
+                            <Link key={link.href} href={link.href} className="text-brand-gray hover:text-white transition-colors text-sm uppercase tracking-wider font-semibold">
+                                {link.label}
+                            </Link>
+                        ))}
+                    </nav>
 
-        {/* Desktop Nav */}
-        <div className="hidden md:flex items-center gap-8">
-          {links.map((l) => (
-            <Link
-              key={l.href}
-              href={l.href}
-              className="text-brand-gray hover:text-brand-teal transition-colors font-body text-sm tracking-widest uppercase"
-            >
-              {l.label}
-            </Link>
-          ))}
+                    <div className="w-px h-6 bg-white/10"></div>
 
-          {/* Cart Icon */}
-          <Link href="/cart" className="relative text-brand-gray hover:text-brand-teal transition-colors">
-            <ShoppingCart size={22} />
-            {totalItems > 0 && (
-              <span className="absolute -top-2 -right-2 bg-brand-teal text-brand-dark text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center">
-                {totalItems}
-              </span>
-            )}
-          </Link>
+                    <button onClick={openCart} className="relative p-2">
+                        <ShoppingBag className="text-white hover:text-[#FF7143] transition-colors" />
+                        {totalItems > 0 && (
+                            <span className="absolute -top-1 -right-1 bg-[#FF7143] text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
+                                {totalItems}
+                            </span>
+                        )}
+                    </button>
+                </div>
 
-          <Link
-            href="/contact"
-            className="bg-brand-teal text-brand-dark px-6 py-2.5 text-sm font-bold tracking-widest uppercase hover:bg-brand-teal-light transition-colors rounded-full"
-          >
-            Get in Touch
-          </Link>
-        </div>
+                <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="md:hidden p-2">
+                    {isMenuOpen ? <X /> : <Menu />}
+                </button>
 
-        {/* Mobile Toggle */}
-        <div className="md:hidden flex items-center gap-4">
-          <Link href="/cart" className="relative text-brand-gray">
-            <ShoppingCart size={22} />
-            {totalItems > 0 && (
-              <span className="absolute -top-2 -right-2 bg-brand-teal text-brand-dark text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center">
-                {totalItems}
-              </span>
-            )}
-          </Link>
-          <button
-            onClick={() => setOpen(!open)}
-            className="text-brand-gray"
-            aria-label="Toggle menu"
-          >
-            {open ? <X size={24} /> : <Menu size={24} />}
-          </button>
-        </div>
-      </div>
-
-      {/* Mobile Menu */}
-      <AnimatePresence>
-        {open && (
-          <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.3, ease: "easeInOut" }}
-            className="md:hidden bg-brand-dark border-t border-white/10 overflow-hidden"
-          >
-            <div className="px-6 py-6 flex flex-col gap-5">
-              {links.map((l) => (
-                <Link
-                  key={l.href}
-                  href={l.href}
-                  onClick={() => setOpen(false)}
-                  className="text-brand-gray hover:text-brand-teal transition-colors uppercase tracking-widest text-sm"
-                >
-                  {l.label}
-                </Link>
-              ))}
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </nav>
-  );
+                {isMenuOpen && (
+                    <div className="absolute top-full left-0 w-full bg-brand-dark/95 backdrop-blur-sm md:hidden flex flex-col items-center gap-6 py-8 border-t border-white/10">
+                        {navLinks.map((link) => (
+                            <Link key={link.href} href={link.href} onClick={() => setIsMenuOpen(false)} className="text-brand-gray hover:text-white transition-colors text-lg uppercase tracking-wider font-semibold">
+                                {link.label}
+                            </Link>
+                        ))}
+                        <div className="w-24 h-px bg-white/10 my-2"></div>
+                        <button onClick={openCart} className="relative p-2">
+                            <ShoppingBag size={28} className="text-white hover:text-[#FF7143] transition-colors" />
+                            {totalItems > 0 && (
+                                <span className="absolute -top-1 -right-1 bg-[#FF7143] text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
+                                    {totalItems}
+                                </span>
+                            )}
+                        </button>
+                    </div>
+                )}
+            </nav>
+        </header>
+    );
 }

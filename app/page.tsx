@@ -7,31 +7,32 @@ import { motion, Variants } from "framer-motion";
 const categories = [
   {
     icon: <Briefcase size={28} />,
-    title: "Men’s Collection",
-    desc: "From sharp office oxfords to weekend-ready sneakers.",
+    title: "Web Design",
+    desc: "Intuitive, high-converting websites tailored to your brand.",
   },
   {
     icon: <Sparkles size={28} />,
-    title: "Women’s Collection",
-    desc: "Elegant heels, versatile boots, and everyday slip-ons.",
+    title: "SEO Strategy",
+    desc: "Robust optimization to dominate search rankings and drive traffic.",
   },
   {
     icon: <Activity size={28} />,
-    title: "The Athletic Line",
-    desc: "Engineered support for when you need to pick up the pace.",
+    title: "Social Media",
+    desc: "Full-scale management to engage your audience and build loyalty.",
   },
 ];
 
 const whyChooseUs = [
-  { title: "Premium Sourcing", desc: "We source only the finest, most durable materials to ensure your shoes last season after season." },
-  { title: "Built-In Comfort", desc: "With built-in arch support, breathable linings, and shock-absorbing soles in every pair." },
-  { title: "Custom-Made Feel", desc: "We guarantee a fit that feels custom-made from the very first step." },
+  { title: "Transparency", desc: "No vague retainers. We offer clear, productized services so you know exactly what you are paying for." },
+  { title: "Speed", desc: "Our agile approach means faster turnaround times without ever compromising on top-tier quality." },
+  { title: "ROI-Focused", desc: "We focus on real business results and maximizing your return on investment." },
 ];
 
 const process = [
-  { step: "1", title: "Ergonomic Design", desc: "Every shoe begins with studying the natural movement of the human foot." },
-  { step: "2", title: "Premium Sourcing", desc: "We select high-quality leathers, breathable knits, and durable rubber." },
-  { step: "3", title: "Expert Craftsmanship", desc: "Assembled with precision to ensure longevity and superior comfort." },
+  { step: "1", title: "Discovery", desc: "We audit your current brand and define your goals." },
+  { step: "2", title: "Strategy", desc: "We build a custom roadmap tailored to your target audience." },
+  { step: "3", title: "Execution", desc: "Our designers and marketers bring the vision to life." },
+  { step: "4", title: "Optimization", desc: "We monitor data and refine our approach for maximum return." },
 ];
 
 const fadeInUp: Variants = {
@@ -75,16 +76,16 @@ export default function HomePage() {
           className="relative z-10 flex flex-col items-center"
         >
           <h1 className="font-display text-5xl md:text-7xl font-bold leading-tight mb-6 max-w-4xl">
-            Find Your Balance. Step into Comfort.
+            We Engineer Digital Growth.
           </h1>
           <p className="text-brand-gray max-w-2xl text-lg mb-10 leading-relaxed">
-            Discover Walkzen Footwear—where premium craftsmanship meets ultimate, all-day comfort. Thoughtfully designed shoes for men and women who refuse to compromise on style or well-being.
+            Marketgrid Agency is a full-service marketing and design firm dedicated to elevating your brand. We combine data-driven strategies with striking visual design to create digital experiences that capture attention and drive real business results.
           </p>
           <Link
             href="/shop"
-            className="bg-brand-teal text-brand-dark px-8 py-4 font-bold tracking-widest uppercase text-sm hover:bg-brand-teal-light transition-all inline-flex items-center gap-2 rounded-full"
+            className="bg-[#FF7143] text-white px-8 py-4 font-bold tracking-widest uppercase text-sm hover:bg-[#e5653c] transition-all inline-flex items-center gap-2 rounded-full"
           >
-            Shop the Collection <ArrowRight size={16} />
+            See Our Work <ArrowRight size={16} />
           </Link>
         </motion.div>
       </section>
@@ -98,15 +99,15 @@ export default function HomePage() {
         className="max-w-4xl mx-auto px-6 py-24 text-center"
       >
         <h2 className="font-display text-4xl md:text-5xl font-bold mb-6">
-          More Than Just a Shoe.
+          Where Creativity Meets Analytics
         </h2>
         <p className="text-brand-gray text-lg leading-relaxed">
-          We believe that a good day starts from the ground up. At Walkzen Footwear, we design shoes that move naturally with your life. By combining modern aesthetics with ergonomic engineering, we create footwear that feels like a natural extension of your body.
+          At Marketgrid, we don’t just make things look pretty; we make them perform. Born from a desire to bridge the gap between stunning design and measurable marketing, our team of strategists, creatives, and developers work in unison to scale your business in the digital landscape.
         </p>
       </motion.section>
 
-      {/* CATEGORIES */}
-      <section className="bg-brand-navy/30 py-24 px-6">
+      {/* OUR SERVICES */}
+      <section className="bg-[#0052CC]/10 py-24 px-6">
         <div className="max-w-6xl mx-auto">
           <motion.div 
             initial="initial"
@@ -115,10 +116,10 @@ export default function HomePage() {
             variants={fadeInUp}
           >
             <h2 className="font-display text-4xl md:text-5xl font-bold text-center mb-6">
-              Crafted for Every Journey
+              Comprehensive Digital Solutions
             </h2>
             <p className="text-brand-gray text-center mb-16 text-lg">
-              Explore our diverse ranges tailored to fit your lifestyle.
+              Whether you are building a brand from scratch or scaling an enterprise, our productized services are designed to fit your needs. From intuitive web design and robust SEO to full-scale social media management, we provide the tools and expertise to dominate your market grid.
             </p>
           </motion.div>
           <motion.div 
@@ -132,9 +133,9 @@ export default function HomePage() {
               <motion.div
                 variants={staggerItem}
                 key={c.title}
-                className="border border-white/10 p-6 hover:border-brand-teal/50 transition-all group rounded-2xl bg-white/2 hover:bg-white/5"
+              className="border border-white/10 p-6 hover:border-[#0052CC]/50 transition-all group rounded-2xl bg-white/2 hover:bg-white/5"
               >
-                <div className="text-brand-teal mb-4 group-hover:scale-110 transition-transform">
+              <div className="text-[#0052CC] mb-4 group-hover:scale-110 transition-transform">
                   {c.icon}
                 </div>
                 <h3 className="font-display text-xl font-bold mb-3">{c.title}</h3>
@@ -154,8 +155,17 @@ export default function HomePage() {
           variants={fadeInUp}
           className="font-display text-4xl font-bold text-center mb-16"
         >
-          The <span className="text-brand-teal">Walkzen Promise</span>
+        The <span className="text-[#0052CC]">Marketgrid Advantage</span>
         </motion.h2>
+        <motion.p
+          initial="initial"
+          whileInView="whileInView"
+          viewport={{ once: true, margin: "-50px" }}
+          variants={fadeInUp}
+          className="text-brand-gray text-center max-w-3xl mx-auto mb-16 text-lg"
+        >
+          We believe in transparency, speed, and ROI. Unlike traditional agencies that trap you in vague retainers, we offer clear, productized services so you know exactly what you are paying for. Our agile approach means faster turnaround times without ever compromising on top-tier quality.
+        </motion.p>
         <motion.div 
           variants={staggerContainer}
           initial="initial"
@@ -173,7 +183,7 @@ export default function HomePage() {
       </section>
 
       {/* PROCESS */}
-      <section className="bg-brand-navy/30 py-24 px-6">
+      <section className="bg-[#0052CC]/10 py-24 px-6">
         <div className="max-w-4xl mx-auto">
           <motion.h2 
             initial="initial"
@@ -182,8 +192,17 @@ export default function HomePage() {
             variants={fadeInUp}
             className="font-display text-4xl font-bold text-center mb-16"
           >
-            Designed with Purpose
+            How We Drive Success
           </motion.h2>
+          <motion.p
+            initial="initial"
+            whileInView="whileInView"
+            viewport={{ once: true, margin: "-50px" }}
+            variants={fadeInUp}
+            className="text-brand-gray text-center mb-16 text-lg"
+          >
+            Our methodology is simple but effective.
+          </motion.p>
           <motion.div 
             variants={staggerContainer}
             initial="initial"
@@ -193,7 +212,7 @@ export default function HomePage() {
           >
             {process.map((p) => (
               <motion.div variants={staggerItem} key={p.step} className="flex gap-8 items-start border-b border-white/10 pb-8">
-                <span className="font-display text-5xl font-bold text-brand-teal/40 shrink-0">
+                <span className="font-display text-5xl font-bold text-[#0052CC]/60 shrink-0">
                   {p.step}
                 </span>
                 <div>
@@ -215,16 +234,16 @@ export default function HomePage() {
         className="py-32 px-6 text-center"
       >
         <h2 className="font-display text-4xl md:text-6xl font-bold mb-6">
-          Ready to Walk on Clouds?
+          Ready to Dominate Your Market?
         </h2>
         <p className="text-brand-gray max-w-xl mx-auto mb-10 text-lg">
-          Join the Walkzen community today. Sign up for our newsletter to receive early access to new drops and 10% off your first purchase.
+          Stop leaving money on the table. Partner with Marketgrid Agency today and let’s build a digital presence that works as hard as you do.
         </p>
         <Link
-          href="#"
-          className="bg-brand-teal text-brand-dark px-10 py-4 uppercase tracking-widest text-sm font-bold hover:bg-brand-teal-light transition-all inline-block rounded-full"
+          href="/contact"
+          className="bg-[#FF7143] text-white px-10 py-4 uppercase tracking-widest text-sm font-bold hover:bg-[#e5653c] transition-all inline-block rounded-full"
         >
-          Subscribe & Save
+          Book a Free Consultation
         </Link>
       </motion.section>
 

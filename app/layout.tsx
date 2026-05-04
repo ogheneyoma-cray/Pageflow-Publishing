@@ -5,6 +5,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { CartProvider } from "@/context/CartContext";
+import CartDrawer from "@/components/CartDrawer";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -17,8 +18,8 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Walkzen Footwear | Premium Comfort",
-  description: "Discover premium, comfortable footwear designed for your daily journey.",
+  title: "Marketgrid Agency | Digital Growth",
+  description: "Marketgrid Agency is a full-service marketing and design firm dedicated to elevating your brand.",
 }
 
 export default function RootLayout({
@@ -31,6 +32,7 @@ export default function RootLayout({
       <body className="bg-brand-dark text-white antialiased" suppressHydrationWarning>
         <CartProvider>
           <Navbar />
+          <CartDrawer />
           {children}
           <Footer />
         </CartProvider>

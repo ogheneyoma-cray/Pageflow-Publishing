@@ -15,19 +15,20 @@ export default function RefundPage() {
           Refund Policy
         </h1>
 
-        <section className="mb-8">
-          <h2 className="font-display text-2xl font-bold mb-4 text-brand-teal">30-Day Comfort Guarantee (Returns & Exchanges)</h2>
-          <p className="text-brand-gray text-lg leading-relaxed">
-            We want you to be entirely satisfied with your Walkzen shoes. If the fit isn`t perfect, we accept returns and exchanges within 30 days of the delivery date. To be eligible for a full refund, shoes must be unworn (except for trying them on indoors on a clean surface), in their original condition, and returned in the original Walkzen shoebox.
-          </p>
-        </section>
+        <h2 className="text-2xl font-bold text-[#0052CC] mt-10 mb-4">Digital Services and Products</h2>
+        <p className="text-brand-gray text-lg leading-relaxed mb-8">
+          Due to the digital and labor-intensive nature of our services (design, marketing strategy, development), Marketgrid Agency generally does not offer refunds once work has commenced.
+        </p>
 
-        <section className="mb-8">
-          <h2 className="font-display text-2xl font-bold mb-4 text-brand-teal">Processing Refunds</h2>
-          <p className="text-brand-gray text-lg leading-relaxed">
-            Once we receive and inspect your return at our warehouse, we will initiate a refund to your original payment method. Please allow 5-10 business days for the funds to reflect in your account. Return shipping costs are the responsibility of the customer unless the item received was defective.
-          </p>
-        </section>
+        <h2 className="text-2xl font-bold text-[#0052CC] mt-10 mb-4">Cancellation Before Project Commencement</h2>
+        <p className="text-brand-gray text-lg leading-relaxed mb-8">
+          If you purchase a productized service and request a cancellation before any design, strategic, or development work has begun (typically within 24 hours of purchase), you are eligible for a full refund minus a 5% payment processing fee.
+        </p>
+
+        <h2 className="text-2xl font-bold text-[#0052CC] mt-10 mb-4">Milestone Rejections</h2>
+        <p className="text-brand-gray text-lg leading-relaxed mb-8">
+          For larger custom projects, we work on a milestone basis. If you are dissatisfied with a specific milestone, you must notify us in writing before approving it. Once a deliverable is approved and final files are sent or campaigns are launched, no refunds will be issued for that milestone.
+        </p>
       </motion.div>
     </main>
   );

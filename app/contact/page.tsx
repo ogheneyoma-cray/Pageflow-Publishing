@@ -5,39 +5,43 @@ import { motion } from "framer-motion";
 export default function ContactPage() {
   return (
     <main className="bg-brand-dark text-white min-h-screen pt-32 pb-24 px-6 font-body">
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className="max-w-3xl mx-auto"
+        className="max-w-4xl mx-auto"
       >
-        <h1 className="font-display text-5xl md:text-6xl font-bold mb-10 leading-tight">
-          Let’s Connect
+        <h1 className="font-display text-5xl md:text-6xl font-bold mb-6 leading-tight">
+          Let’s Build Something Great Together
         </h1>
-        <p className="text-brand-gray text-lg leading-relaxed mb-12">
-          Have a question about sizing, an existing order, or just want to share how much you love your new shoes? The Walkzen team is always here to help you put your best foot forward. Reach out using the details below or via our direct contact form.
+        <p className="text-brand-gray text-lg leading-relaxed mb-16 max-w-3xl">
+          Whether you need a quick SEO audit, a complete brand overhaul, or just want to chat about your digital strategy, the Marketgrid team is here to help. Reach out to us, and let's map out your next big win.
         </p>
-        
-        <h2 className="font-display text-3xl font-bold mb-6 text-brand-teal">Customer Support Details</h2>
-        <div className="text-brand-gray text-lg leading-relaxed mb-12 space-y-2">
-          <p><strong>Email:</strong> support@walkzenfootwear.com</p>
-          <p><strong>Customer Care Hours:</strong> Monday - Friday, 8:00 AM - 6:00 PM (EST)</p>
-          <p>Please allow up to 24 hours for our team to respond to your inquiry.</p>
-        </div>
-        
-        <div className="bg-white/5 border border-white/10 p-8 rounded-2xl">
-          <h3 className="font-display text-2xl font-bold mb-6">Send us a message</h3>
-          <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <input type="text" placeholder="Name" className="bg-white/5 border border-white/10 rounded-lg p-3 w-full text-white focus:outline-none focus:border-brand-teal transition-colors" />
-              <input type="email" placeholder="Email" className="bg-white/5 border border-white/10 rounded-lg p-3 w-full text-white focus:outline-none focus:border-brand-teal transition-colors" />
-            </div>
-            <input type="text" placeholder="Order Number (Optional)" className="bg-white/5 border border-white/10 rounded-lg p-3 w-full text-white focus:outline-none focus:border-brand-teal transition-colors" />
-            <textarea placeholder="Message" rows={5} className="bg-white/5 border border-white/10 rounded-lg p-3 w-full text-white focus:outline-none focus:border-brand-teal transition-colors"></textarea>
-            <button type="submit" className="bg-brand-teal text-brand-dark px-8 py-3 font-bold uppercase tracking-widest text-sm hover:bg-brand-teal-light transition-all rounded-lg w-full">
-              Submit Message
-            </button>
-          </form>
+
+        <div className="grid md:grid-cols-2 gap-16 mb-16">
+          <div>
+            <h2 className="font-display text-3xl font-bold mb-6 text-[#0052CC]">Direct Contact</h2>
+            <ul className="text-brand-gray text-lg leading-relaxed space-y-6">
+              <li><strong className="block text-white mb-1">Email:</strong> hello@marketgridagency.com</li>
+              <li><strong className="block text-white mb-1">Phone:</strong> +1 (555) 123-4567</li>
+              <li><strong className="block text-white mb-1">Office Hours:</strong> Monday - Friday, 9:00 AM - 6:00 PM (EST)</li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 className="font-display text-3xl font-bold mb-6 text-[#0052CC]">Send Us a Message</h2>
+            <p className="text-brand-gray text-base leading-relaxed mb-8">
+              Fill out the form below with your project details, and one of our lead strategists will get back to you within 24 hours to schedule a discovery call.
+            </p>
+            <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
+              <input type="text" placeholder="Your Name" className="w-full p-4 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-[#0052CC] transition-colors" />
+              <input type="email" placeholder="Your Email" className="w-full p-4 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-[#0052CC] transition-colors" />
+              <textarea rows={5} placeholder="Project Details" className="w-full p-4 rounded-xl bg-white/5 border border-white/10 text-white focus:outline-none focus:border-[#0052CC] transition-colors"></textarea>
+              <button type="submit" className="bg-[#FF7143] text-white px-8 py-4 font-bold tracking-widest uppercase text-sm hover:bg-[#e5653c] transition-all rounded-full w-full">
+                Send Message
+              </button>
+            </form>
+          </div>
         </div>
       </motion.div>
     </main>

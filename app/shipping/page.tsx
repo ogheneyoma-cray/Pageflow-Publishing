@@ -15,19 +15,20 @@ export default function ShippingPage() {
           Shipping Policy
         </h1>
 
-        <section className="mb-8">
-          <h2 className="font-display text-2xl font-bold mb-4 text-brand-teal">Order Processing and Dispatch</h2>
-          <p className="text-brand-gray text-lg leading-relaxed">
-            Our warehouse team works diligently to pack and ship your orders. All standard orders are processed within 1-2 business days. During peak holiday seasons or promotional periods, processing times may be slightly extended.
-          </p>
-        </section>
+        <h2 className="text-2xl font-bold text-[#0052CC] mt-10 mb-4">Delivery of Digital Goods</h2>
+        <p className="text-brand-gray text-lg leading-relaxed mb-8">
+          Marketgrid Agency provides digital services and products. Therefore, no physical shipping is required.
+        </p>
 
-        <section className="mb-8">
-          <h2 className="font-display text-2xl font-bold mb-4 text-brand-teal">Delivery Options and Tracking</h2>
-          <p className="text-brand-gray text-lg leading-relaxed">
-            We offer Standard Shipping (3-5 business days) and Expedited Shipping (1-2 business days) at checkout. Once your order leaves our facility, you will receive an email containing a tracking number so you can monitor your shoes`` journey to your doorstep. We currently ship domestically, with plans to expand internationally soon.
-          </p>
-        </section>
+        <h2 className="text-2xl font-bold text-[#0052CC] mt-10 mb-4">Turnaround Times</h2>
+        <p className="text-brand-gray text-lg leading-relaxed mb-8">
+          Estimated turnaround times for productized services are listed on the respective service pages or in your project proposal. "Delivery" is defined as the moment we send the initial drafts, final digital files, or live links to the email address associated with your account.
+        </p>
+
+        <h2 className="text-2xl font-bold text-[#0052CC] mt-10 mb-4">File Access</h2>
+        <p className="text-brand-gray text-lg leading-relaxed mb-8">
+          Completed digital assets (such as logos, brand guidelines, and ad creatives) are delivered securely via cloud storage links (e.g., Google Drive or Dropbox) or directly via email. Clients are responsible for downloading and backing up their files within 30 days of final delivery, after which the hosting links may expire.
+        </p>
       </motion.div>
     </main>
   );

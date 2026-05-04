@@ -15,19 +15,20 @@ export default function TermsPage() {
           Terms and Conditions
         </h1>
 
-        <section className="mb-8">
-          <h2 className="font-display text-2xl font-bold mb-4 text-brand-teal">Agreement of Use</h2>
-          <p className="text-brand-gray text-lg leading-relaxed">
-            Welcome to Walkzen Footwear. By accessing our website and purchasing our products, you agree to be bound by these Terms and Conditions. All digital content, imagery, and logos are the intellectual property of Walkzen Footwear and may not be used without explicit permission.
-          </p>
-        </section>
+        <h2 className="text-2xl font-bold text-[#0052CC] mt-10 mb-4">Agreement to Terms</h2>
+        <p className="text-brand-gray text-lg leading-relaxed mb-8">
+          By accessing our website and purchasing our services, you agree to be bound by these Terms and Conditions. If you do not agree with any part of these terms, you are prohibited from using our site and services.
+        </p>
 
-        <section className="mb-8">
-          <h2 className="font-display text-2xl font-bold mb-4 text-brand-teal">Purchasing and Pricing</h2>
-          <p className="text-brand-gray text-lg leading-relaxed">
-          We reserve the right to modify product prices, discontinue items, or cancel orders at our discretion (for example, in the event of a pricing error or suspected fraud). We strive to display product colors as accurately as possible, but we cannot guarantee that your device&apos;s display will perfectly reflect the physical product.
-          </p>
-        </section>
+        <h2 className="text-2xl font-bold text-[#0052CC] mt-10 mb-4">Intellectual Property Rights</h2>
+        <p className="text-brand-gray text-lg leading-relaxed mb-8">
+          Upon final payment for any design or digital asset, Marketgrid Agency transfers the full copyright and ownership of the final delivered files to the client. Marketgrid Agency retains the right to display the completed work in our portfolio and marketing materials unless a Non-Disclosure Agreement (NDA) is signed prior to project commencement.
+        </p>
+
+        <h2 className="text-2xl font-bold text-[#0052CC] mt-10 mb-4">Client Responsibilities</h2>
+        <p className="text-brand-gray text-lg leading-relaxed mb-8">
+          Clients are expected to provide timely feedback, necessary brand assets, and approvals. Delays in client feedback may result in extended project timelines. Marketgrid Agency is not responsible for missed deadlines caused by client unresponsiveness.
+        </p>
       </motion.div>
     </main>
   );
