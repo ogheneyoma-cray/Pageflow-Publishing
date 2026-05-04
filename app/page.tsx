@@ -1,38 +1,42 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, Briefcase, Sparkles, Activity } from "lucide-react";
+import { ArrowRight, Droplets, Palette, Sparkles, Brush } from "lucide-react";
 import { motion, Variants } from "framer-motion";
 
 const categories = [
   {
-    icon: <Briefcase size={28} />,
-    title: "Web Design",
-    desc: "Intuitive, high-converting websites tailored to your brand.",
+    icon: <Droplets size={28} />,
+    title: "Complexion",
+    desc: "Flawless foundations, concealers, and setting sprays that feel like a second skin.",
+  },
+  {
+    icon: <Palette size={28} />,
+    title: "Color & Artistry",
+    desc: "High-impact lipsticks, blushes, and eye products for limitless self-expression.",
   },
   {
     icon: <Sparkles size={28} />,
-    title: "SEO Strategy",
-    desc: "Robust optimization to dominate search rankings and drive traffic.",
+    title: "Skincare Prep",
+    desc: "Nourishing serums and moisturizers that create the perfect canvas.",
   },
   {
-    icon: <Activity size={28} />,
-    title: "Social Media",
-    desc: "Full-scale management to engage your audience and build loyalty.",
+    icon: <Brush size={28} />,
+    title: "Tools",
+    desc: "Pro-grade, vegan brushes and sponges for seamless application.",
   },
 ];
 
 const whyChooseUs = [
-  { title: "Transparency", desc: "No vague retainers. We offer clear, productized services so you know exactly what you are paying for." },
-  { title: "Speed", desc: "Our agile approach means faster turnaround times without ever compromising on top-tier quality." },
-  { title: "ROI-Focused", desc: "We focus on real business results and maximizing your return on investment." },
+  { title: "Skin-First Formulas", desc: "Infused with active ingredients like hyaluronic acid, Vitamin C, and peptides." },
+  { title: "Inclusive Shade Ranges", desc: "Beauty is for everyone. Our complexion products cater to all undertones." },
+  { title: "Conscious Packaging", desc: "We are committed to reducing our carbon footprint with recyclable and refillable packaging options." },
 ];
 
 const process = [
-  { step: "1", title: "Discovery", desc: "We audit your current brand and define your goals." },
-  { step: "2", title: "Strategy", desc: "We build a custom roadmap tailored to your target audience." },
-  { step: "3", title: "Execution", desc: "Our designers and marketers bring the vision to life." },
-  { step: "4", title: "Optimization", desc: "We monitor data and refine our approach for maximum return." },
+  { step: "1", title: "Prep", desc: "Cleanse and hydrate with our Skincare Prep line to create a smooth, glowing base." },
+  { step: "2", title: "Perfect", desc: "Apply our Luminous Foundation and Cosmic Glow Highlighter for a flawless, lit-from-within look." },
+  { step: "3", title: "Play", desc: "Add a pop of color with our Velvet Matte Lipsticks and Stardust Blushes to complete your vibe." },
 ];
 
 const fadeInUp: Variants = {
@@ -63,12 +67,12 @@ const staggerItem: Variants = {
 
 export default function HomePage() {
   return (
-    <main className="bg-brand-dark text-white font-body">
+    <main className="bg-[#FFF0F5] text-[#4A2545] font-body">
 
       {/* HERO */}
       <section className="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-24 relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none"
-          style={{ backgroundImage: "radial-gradient(ellipse at center, rgba(201, 169, 97, 0.12) 0%, transparent 70%)" }} />
+          style={{ backgroundImage: "radial-gradient(ellipse at center, rgba(255, 133, 161, 0.15) 0%, transparent 70%)" }} />
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -76,17 +80,25 @@ export default function HomePage() {
           className="relative z-10 flex flex-col items-center"
         >
           <h1 className="font-display text-5xl md:text-7xl font-bold leading-tight mb-6 max-w-4xl">
-            We Engineer Digital Growth.
+            Unleash Your Cosmic Glow.
           </h1>
-          <p className="text-brand-gray max-w-2xl text-lg mb-10 leading-relaxed">
-            Marketgrid Agency is a full-service marketing and design firm dedicated to elevating your brand. We combine data-driven strategies with striking visual design to create digital experiences that capture attention and drive real business results.
+          <p className="text-[#4A2545]/70 max-w-2xl text-lg mb-10 leading-relaxed">
+            Discover high-performance, cruelty-free cosmetics designed to celebrate your unique beauty. From radiant skincare to bold color, step into your light with Cosmolite Beauty.
           </p>
-          <Link
-            href="/shop"
-            className="bg-[#FF7143] text-white px-8 py-4 font-bold tracking-widest uppercase text-sm hover:bg-[#e5653c] transition-all inline-flex items-center gap-2 rounded-full"
-          >
-            See Our Work <ArrowRight size={16} />
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Link
+              href="/shop"
+              className="bg-[#FF85A1] text-white px-8 py-4 font-bold tracking-widest uppercase text-sm hover:bg-[#e67791] transition-all inline-flex justify-center items-center gap-2 rounded-full"
+            >
+              Shop New Arrivals <ArrowRight size={16} />
+            </Link>
+            <Link
+              href="/shop"
+              className="bg-transparent border border-[#4A2545]/20 text-[#4A2545] px-8 py-4 font-bold tracking-widest uppercase text-sm hover:bg-[#4A2545]/5 transition-all inline-flex justify-center items-center gap-2 rounded-full"
+            >
+              Discover Your Shade
+            </Link>
+          </div>
         </motion.div>
       </section>
 
@@ -99,15 +111,15 @@ export default function HomePage() {
         className="max-w-4xl mx-auto px-6 py-24 text-center"
       >
         <h2 className="font-display text-4xl md:text-5xl font-bold mb-6">
-          Where Creativity Meets Analytics
+          Beauty Without Compromise.
         </h2>
-        <p className="text-brand-gray text-lg leading-relaxed">
-          At Marketgrid, we don’t just make things look pretty; we make them perform. Born from a desire to bridge the gap between stunning design and measurable marketing, our team of strategists, creatives, and developers work in unison to scale your business in the digital landscape.
+        <p className="text-[#4A2545]/70 text-lg leading-relaxed">
+          At Cosmolite Beauty, we believe makeup should be an extension of your personality, not a mask. Born from a desire for clean, highly pigmented, and skin-loving formulas, our products are crafted to enhance your natural radiance. We are proudly 100% cruelty-free, vegan, and formulated for every skin tone and type.
         </p>
       </motion.section>
 
       {/* OUR SERVICES */}
-      <section className="bg-[#0052CC]/10 py-24 px-6">
+      <section className="bg-[#4A2545]/5 py-24 px-6">
         <div className="max-w-6xl mx-auto">
           <motion.div 
             initial="initial"
@@ -115,31 +127,28 @@ export default function HomePage() {
             viewport={{ once: true, margin: "-50px" }}
             variants={fadeInUp}
           >
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-center mb-6">
-              Comprehensive Digital Solutions
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-center mb-16">
+              Curated for Your Routine
             </h2>
-            <p className="text-brand-gray text-center mb-16 text-lg">
-              Whether you are building a brand from scratch or scaling an enterprise, our productized services are designed to fit your needs. From intuitive web design and robust SEO to full-scale social media management, we provide the tools and expertise to dominate your market grid.
-            </p>
           </motion.div>
           <motion.div 
             variants={staggerContainer}
             initial="initial"
             whileInView="whileInView"
             viewport={{ once: true, margin: "-50px" }}
-            className="grid md:grid-cols-3 gap-6"
+            className="grid md:grid-cols-2 lg:grid-cols-4 gap-6"
           >
             {categories.map((c) => (
               <motion.div
                 variants={staggerItem}
                 key={c.title}
-              className="border border-white/10 p-6 hover:border-[#0052CC]/50 transition-all group rounded-2xl bg-white/2 hover:bg-white/5"
+                className="border border-[#4A2545]/10 p-6 hover:border-[#4A2545]/30 transition-all group rounded-2xl bg-[#4A2545]/2 hover:bg-[#4A2545]/5"
               >
-              <div className="text-[#0052CC] mb-4 group-hover:scale-110 transition-transform">
+              <div className="text-[#4A2545] mb-4 group-hover:scale-110 transition-transform">
                   {c.icon}
                 </div>
                 <h3 className="font-display text-xl font-bold mb-3">{c.title}</h3>
-                <p className="text-brand-gray leading-relaxed text-sm">{c.desc}</p>
+                <p className="text-[#4A2545]/70 leading-relaxed text-sm">{c.desc}</p>
               </motion.div>
             ))}
           </motion.div>
@@ -155,17 +164,8 @@ export default function HomePage() {
           variants={fadeInUp}
           className="font-display text-4xl font-bold text-center mb-16"
         >
-        The <span className="text-[#0052CC]">Marketgrid Advantage</span>
+        The <span className="text-[#4A2545]">Cosmolite Standard</span>
         </motion.h2>
-        <motion.p
-          initial="initial"
-          whileInView="whileInView"
-          viewport={{ once: true, margin: "-50px" }}
-          variants={fadeInUp}
-          className="text-brand-gray text-center max-w-3xl mx-auto mb-16 text-lg"
-        >
-          We believe in transparency, speed, and ROI. Unlike traditional agencies that trap you in vague retainers, we offer clear, productized services so you know exactly what you are paying for. Our agile approach means faster turnaround times without ever compromising on top-tier quality.
-        </motion.p>
         <motion.div 
           variants={staggerContainer}
           initial="initial"
@@ -176,14 +176,14 @@ export default function HomePage() {
           {whyChooseUs.map((item) => (
             <motion.div variants={staggerItem} key={item.title} className="flex flex-col items-center gap-4">
               <h3 className="font-display text-xl font-bold">{item.title}</h3>
-              <p className="text-brand-gray text-sm leading-relaxed">{item.desc}</p>
+              <p className="text-[#4A2545]/70 text-sm leading-relaxed">{item.desc}</p>
             </motion.div>
           ))}
         </motion.div>
       </section>
 
       {/* PROCESS */}
-      <section className="bg-[#0052CC]/10 py-24 px-6">
+      <section className="bg-[#4A2545]/5 py-24 px-6">
         <div className="max-w-4xl mx-auto">
           <motion.h2 
             initial="initial"
@@ -192,17 +192,8 @@ export default function HomePage() {
             variants={fadeInUp}
             className="font-display text-4xl font-bold text-center mb-16"
           >
-            How We Drive Success
+            Your 3-Step Radiance Routine
           </motion.h2>
-          <motion.p
-            initial="initial"
-            whileInView="whileInView"
-            viewport={{ once: true, margin: "-50px" }}
-            variants={fadeInUp}
-            className="text-brand-gray text-center mb-16 text-lg"
-          >
-            Our methodology is simple but effective.
-          </motion.p>
           <motion.div 
             variants={staggerContainer}
             initial="initial"
@@ -211,13 +202,13 @@ export default function HomePage() {
             className="space-y-8"
           >
             {process.map((p) => (
-              <motion.div variants={staggerItem} key={p.step} className="flex gap-8 items-start border-b border-white/10 pb-8">
-                <span className="font-display text-5xl font-bold text-[#0052CC]/60 shrink-0">
+              <motion.div variants={staggerItem} key={p.step} className="flex gap-8 items-start border-b border-[#4A2545]/10 pb-8">
+                <span className="font-display text-5xl font-bold text-[#4A2545]/60 shrink-0">
                   {p.step}
                 </span>
                 <div>
                   <h3 className="font-display text-2xl font-bold mb-2">{p.title}</h3>
-                  <p className="text-brand-gray leading-relaxed">{p.desc}</p>
+                  <p className="text-[#4A2545]/70 leading-relaxed">{p.desc}</p>
                 </div>
               </motion.div>
             ))}
@@ -234,17 +225,16 @@ export default function HomePage() {
         className="py-32 px-6 text-center"
       >
         <h2 className="font-display text-4xl md:text-6xl font-bold mb-6">
-          Ready to Dominate Your Market?
+          Join the Cosmolite Community
         </h2>
-        <p className="text-brand-gray max-w-xl mx-auto mb-10 text-lg">
-          Stop leaving money on the table. Partner with Marketgrid Agency today and let’s build a digital presence that works as hard as you do.
+        <p className="text-[#4A2545]/70 max-w-xl mx-auto mb-10 text-lg">
+          Subscribe to our newsletter to receive 15% off your first order, exclusive early access to new drops, and pro beauty tips.
         </p>
-        <Link
-          href="/contact"
-          className="bg-[#FF7143] text-white px-10 py-4 uppercase tracking-widest text-sm font-bold hover:bg-[#e5653c] transition-all inline-block rounded-full"
+        <button
+          className="bg-[#FF85A1] text-white px-10 py-4 uppercase tracking-widest text-sm font-bold hover:bg-[#e67791] transition-all inline-block rounded-full"
         >
-          Book a Free Consultation
-        </Link>
+          Claim My 15% Off
+        </button>
       </motion.section>
 
     </main>

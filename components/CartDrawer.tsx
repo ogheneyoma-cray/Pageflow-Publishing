@@ -29,19 +29,19 @@ export default function CartDrawer() {
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ type: "spring", stiffness: 300, damping: 30 }}
-            className="fixed top-0 right-0 h-full w-full max-w-md bg-brand-dark shadow-2xl flex flex-col"
+            className="fixed top-0 right-0 h-full w-full max-w-md bg-[#FFF0F5] text-[#4A2545] shadow-2xl flex flex-col"
             onClick={(e) => e.stopPropagation()}
           >
-            <header className="flex items-center justify-between p-6 border-b border-white/10">
+            <header className="flex items-center justify-between p-6 border-b border-[#4A2545]/10">
               <h2 className="font-display text-2xl font-bold">Your Cart ({totalItems})</h2>
-              <button onClick={closeCart} className="p-2 rounded-full hover:bg-white/10 transition-colors">
+              <button onClick={closeCart} className="p-2 rounded-full hover:bg-[#4A2545]/10 transition-colors">
                 <X size={24} />
               </button>
             </header>
 
             <div className="grow overflow-y-auto p-6">
               {cart.length === 0 ? (
-                <div className="text-center text-brand-gray h-full flex flex-col justify-center items-center">
+                <div className="text-center text-[#4A2545]/70 h-full flex flex-col justify-center items-center">
                   <p className="text-lg">Your cart is empty.</p>
                 </div>
               ) : (
@@ -50,14 +50,14 @@ export default function CartDrawer() {
                     <li key={item.id} className="flex gap-4 items-start">
                       <div className="grow">
                         <h3 className="font-bold">{item.name}</h3>
-                        <p className="text-sm text-brand-gray">{formatPrice(item.price)}</p>
+                        <p className="text-sm text-[#4A2545]/70">{formatPrice(item.price)}</p>
                         <div className="flex items-center gap-4 mt-2">
-                          <div className="flex items-center border border-white/10 rounded-full">
-                            <button onClick={() => updateQuantity(item.id, item.quantity - 1)} className="p-2 hover:bg-white/10 rounded-l-full disabled:opacity-50" disabled={item.quantity <= 1}><Minus size={14} /></button>
+                          <div className="flex items-center border border-[#4A2545]/10 rounded-full">
+                            <button onClick={() => updateQuantity(item.id, item.quantity - 1)} className="p-2 hover:bg-[#4A2545]/10 rounded-l-full disabled:opacity-50" disabled={item.quantity <= 1}><Minus size={14} /></button>
                             <span className="px-3 text-sm font-bold">{item.quantity}</span>
-                            <button onClick={() => updateQuantity(item.id, item.quantity + 1)} className="p-2 hover:bg-white/10 rounded-r-full"><Plus size={14} /></button>
+                            <button onClick={() => updateQuantity(item.id, item.quantity + 1)} className="p-2 hover:bg-[#4A2545]/10 rounded-r-full"><Plus size={14} /></button>
                           </div>
-                          <button onClick={() => removeFromCart(item.id)} className="text-brand-gray hover:text-red-500 transition-colors p-2">
+                          <button onClick={() => removeFromCart(item.id)} className="text-[#4A2545]/70 hover:text-red-500 transition-colors p-2">
                             <Trash2 size={18} />
                           </button>
                         </div>
@@ -70,12 +70,12 @@ export default function CartDrawer() {
             </div>
 
             {cart.length > 0 && (
-              <footer className="p-6 border-t border-white/10 space-y-4">
+              <footer className="p-6 border-t border-[#4A2545]/10 space-y-4">
                 <div className="flex justify-between font-bold text-lg">
                   <span>Subtotal</span>
                   <span>{formatPrice(totalPrice)}</span>
                 </div>
-                <button className="w-full bg-[#FF7143] text-white px-8 py-4 font-bold tracking-widest uppercase text-sm hover:bg-[#e5653c] transition-all rounded-full">
+                <button className="w-full bg-[#FF85A1] text-white px-8 py-4 font-bold tracking-widest uppercase text-sm hover:bg-[#e67791] transition-all rounded-full">
                   Proceed to Checkout
                 </button>
               </footer>

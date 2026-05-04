@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Playfair_Display, DM_Sans } from "next/font/google";
+import { Playfair_Display, Montserrat } from "next/font/google";
 import "./globals.css";
 
 import Navbar from "@/components/Navbar";
@@ -12,14 +12,14 @@ const playfair = Playfair_Display({
   variable: "--font-playfair",
 });
 
-const dmSans = DM_Sans({
+const montserrat = Montserrat({
   subsets: ["latin"],
   variable: "--font-dm-sans",
 });
 
 export const metadata: Metadata = {
-  title: "Marketgrid Agency | Digital Growth",
-  description: "Marketgrid Agency is a full-service marketing and design firm dedicated to elevating your brand.",
+  title: "Cosmolite Beauty | Unleash Your Cosmic Glow",
+  description: "Discover high-performance, cruelty-free cosmetics designed to celebrate your unique beauty.",
 }
 
 export default function RootLayout({
@@ -28,8 +28,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${playfair.variable} ${dmSans.variable}`}>
-      <body className="bg-brand-dark text-white antialiased" suppressHydrationWarning>
+    <html lang="en" className={`${playfair.variable} ${montserrat.variable}`}>
+      <body className="bg-[#FFF0F5] text-[#4A2545] antialiased" suppressHydrationWarning>
         <CartProvider>
           <Navbar />
           <CartDrawer />
