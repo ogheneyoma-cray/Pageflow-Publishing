@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function TermsPage() {
   return (
-    <main className="bg-[#FFF0F5] text-[#4A2545] min-h-screen pt-32 pb-24 px-6 font-body">
+    <main className="bg-slate-50 text-slate-900 min-h-screen pt-32 pb-24 px-6 font-body">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -14,25 +14,25 @@ export default function TermsPage() {
         <h1 className="font-display text-4xl md:text-5xl font-bold mb-10 leading-tight">
           Terms and Conditions
         </h1>
+        <p className="text-slate-700 text-lg mb-8"><strong>Effective Date:</strong> Date</p>
 
-        <h2 className="text-2xl font-bold text-[#FF85A1] mt-10 mb-4">1. Acceptance of Terms</h2>
-        <p className="text-[#4A2545]/70 text-lg leading-relaxed mb-8">
-          By accessing and shopping on the Cosmolite Beauty website, you agree to comply with and be bound by these Terms and Conditions.
+        <p className="text-slate-700 text-lg leading-relaxed mb-8">
+          By accessing PageflowPublishing.com, you agree to these Terms and Conditions.
         </p>
 
-        <h2 className="text-2xl font-bold text-[#FF85A1] mt-10 mb-4">2. Intellectual Property</h2>
-        <p className="text-[#4A2545]/70 text-lg leading-relaxed mb-8">
-          All content on this site, including logos, images, text, and graphics, is the exclusive property of Cosmolite Beauty and is protected by copyright laws. You may not reproduce or distribute any content without our express written permission.
+        <h2 className="text-2xl font-bold text-emerald-500 mt-10 mb-4">1. License</h2>
+        <p className="text-slate-700 text-lg leading-relaxed mb-8">
+          On purchase, you receive a personal, non-transferable license for personal, non-commercial use.
         </p>
 
-        <h2 className="text-2xl font-bold text-[#FF85A1] mt-10 mb-4">3. Product Descriptions and Accuracy</h2>
-        <p className="text-[#4A2545]/70 text-lg leading-relaxed mb-8">
-          We strive to display product colors and textures as accurately as possible. However, due to varying monitor displays, we cannot guarantee that the color you see matches the exact color of the product.
+        <h2 className="text-2xl font-bold text-emerald-500 mt-10 mb-4">2. Intellectual Property</h2>
+        <p className="text-slate-700 text-lg leading-relaxed mb-8">
+          All content—including text, frameworks, and designs—is the property of Pageflow Publishing or its authors.
         </p>
-        
-        <h2 className="text-2xl font-bold text-[#FF85A1] mt-10 mb-4">4. Limitation of Liability</h2>
-        <p className="text-[#4A2545]/70 text-lg leading-relaxed mb-8">
-          Cosmolite Beauty shall not be liable for any adverse reactions resulting from the use of our products. Please review the ingredient lists carefully, especially if you have known allergies, and perform a patch test before full application.
+
+        <h2 className="text-2xl font-bold text-emerald-500 mt-10 mb-4">3. Prohibited Actions</h2>
+        <p className="text-slate-700 text-lg leading-relaxed mb-8">
+          You may not redistribute, resell, or upload Pageflow files to file-sharing platforms.
         </p>
       </motion.div>
     </main>

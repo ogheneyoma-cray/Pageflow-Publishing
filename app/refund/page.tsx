@@ -2,9 +2,9 @@
 
 import { motion } from "framer-motion";
 
-export default function RefundPolicyPage() {
+export default function RefundPage() {
   return (
-    <main className="bg-[#FFF0F5] text-[#4A2545] min-h-screen pt-32 pb-24 px-6 font-body">
+    <main className="bg-slate-50 text-slate-900 min-h-screen pt-32 pb-24 px-6 font-body">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -14,20 +14,25 @@ export default function RefundPolicyPage() {
         <h1 className="font-display text-4xl md:text-5xl font-bold mb-10 leading-tight">
           Refund Policy
         </h1>
+        <p className="text-slate-700 text-lg mb-8"><strong>Effective Date:</strong> Date</p>
 
-        <h2 className="text-2xl font-bold text-[#FF85A1] mt-10 mb-4">1. Returns & Exchanges</h2>
-        <p className="text-[#4A2545]/70 text-lg leading-relaxed mb-8">
-          We want you to love your Cosmolite Beauty products. If you are not completely satisfied, we accept returns and exchanges within 30 days of your purchase date.
+        <p className="text-slate-700 text-lg leading-relaxed mb-8">
+          Pageflow Publishing offers a 14-day satisfaction guarantee on all ebook purchases.
         </p>
 
-        <h2 className="text-2xl font-bold text-[#FF85A1] mt-10 mb-4">2. Condition of Items</h2>
-        <p className="text-[#4A2545]/70 text-lg leading-relaxed mb-8">
-          To be eligible for a return, products must be gently used (less than 20% consumed) or unused and in their original packaging. Tools and accessories (like brushes and sponges) must be completely unopened and unused for hygiene reasons.
+        <h2 className="text-2xl font-bold text-emerald-500 mt-10 mb-4">1. Satisfaction Guarantee</h2>
+        <p className="text-slate-700 text-lg leading-relaxed mb-8">
+          If a title does not deliver the value its description promises, you may request a refund within 14 days of purchase.
         </p>
 
-        <h2 className="text-2xl font-bold text-[#FF85A1] mt-10 mb-4">3. Refund Process</h2>
-        <p className="text-[#4A2545]/70 text-lg leading-relaxed mb-8">
-          To initiate a return, please email hello@cosmolitebeauty.com with your order number. Once your return is received and inspected, we will process your refund to the original method of payment within 5-7 business days. Original shipping costs are non-refundable.
+        <h2 className="text-2xl font-bold text-emerald-500 mt-10 mb-4">2. Technical Issues</h2>
+        <p className="text-slate-700 text-lg leading-relaxed mb-8">
+          If a file is corrupted or cannot be opened, please contact contact@PageflowPublishing.com. We will attempt to resolve the issue before issuing a refund.
+        </p>
+
+        <h2 className="text-2xl font-bold text-emerald-500 mt-10 mb-4">3. Exceptions</h2>
+        <p className="text-slate-700 text-lg leading-relaxed mb-8">
+          Due to the nature of digital goods, refunds are generally not issued once a download link has been extensively accessed unless the product is defective.
         </p>
       </motion.div>
     </main>

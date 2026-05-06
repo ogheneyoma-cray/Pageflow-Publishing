@@ -10,29 +10,29 @@ const legalLinks = [
 const navLinks = [
     { href: "/", label: "Home" },
     { href: "/about", label: "About Us" },
-    { href: "/shop", label: "Shop" },
+    { href: "/shop", label: "Library" },
     { href: "/contact", label: "Contact" },
 ];
 
 export default function Footer() {
     return (
-        <footer className="bg-[#4A2545]/5 border-t border-[#4A2545]/10 py-16 px-6 font-body">
+        <footer className="bg-slate-900/5 border-t border-slate-900/10 py-16 px-6 font-body">
             <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-12">
                 <div className="space-y-4">
-                    <Link href="/" className="font-display text-2xl font-bold text-[#4A2545]">
-                        Cosmolite<span className="text-[#FF85A1]">.</span>
+                    <Link href="/" className="font-display text-2xl font-bold text-slate-900">
+                        Pageflow<span className="text-emerald-500">.</span>
                     </Link>
-                    <p className="text-[#4A2545]/70 text-sm max-w-xs">
-                        Discover high-performance, cruelty-free cosmetics designed to celebrate your unique beauty.
+                    <p className="text-slate-700 text-sm max-w-xs">
+                        Discover a curated sanctuary of premium ebooks designed for the modern reader.
                     </p>
                 </div>
 
                 <div>
-                    <h3 className="font-bold text-[#4A2545] uppercase tracking-widest mb-4">Quick Links</h3>
+                    <h3 className="font-bold text-slate-900 uppercase tracking-widest mb-4">Quick Links</h3>
                     <ul className="space-y-3">
                         {navLinks.map(link => (
                             <li key={link.href}>
-                                <Link href={link.href} className="text-[#4A2545]/70 hover:text-[#FF85A1] hover:underline transition-colors text-sm">
+                                <Link href={link.href} className="text-slate-700 hover:text-emerald-500 hover:underline transition-colors text-sm">
                                     {link.label}
                                 </Link>
                             </li>
@@ -41,11 +41,11 @@ export default function Footer() {
                 </div>
 
                 <div>
-                    <h3 className="font-bold text-[#4A2545] uppercase tracking-widest mb-4">Legal</h3>
+                    <h3 className="font-bold text-slate-900 uppercase tracking-widest mb-4">Legal</h3>
                     <ul className="space-y-3">
                         {legalLinks.map(link => (
                             <li key={link.href}>
-                                <Link href={link.href} className="text-[#4A2545]/70 hover:text-[#FF85A1] hover:underline transition-colors text-sm">
+                                <Link href={link.href} className="text-slate-700 hover:text-emerald-500 hover:underline transition-colors text-sm">
                                     {link.label}
                                 </Link>
                             </li>
@@ -53,8 +53,8 @@ export default function Footer() {
                     </ul>
                 </div>
             </div>
-            <div className="max-w-7xl mx-auto mt-12 pt-8 border-t border-[#4A2545]/10 text-center text-[#4A2545]/70 text-sm">
-                <p>&copy; {new Date().getFullYear()} Cosmolite Beauty. All Rights Reserved.</p>
+            <div className="max-w-7xl mx-auto mt-12 pt-8 border-t border-slate-900/10 text-center text-slate-700 text-sm">
+                <p>&copy; {new Date().getFullYear()} Pageflow Publishing. All Rights Reserved.</p>
             </div>
         </footer>
     );

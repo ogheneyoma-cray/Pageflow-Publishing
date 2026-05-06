@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Montserrat } from "next/font/google";
+import { Lexend, Inter } from "next/font/google";
 import "./globals.css";
 
 import Navbar from "@/components/Navbar";
@@ -7,19 +7,19 @@ import Footer from "@/components/Footer";
 import { CartProvider } from "@/context/CartContext";
 import CartDrawer from "@/components/CartDrawer";
 
-const playfair = Playfair_Display({
+const lexend = Lexend({
   subsets: ["latin"],
-  variable: "--font-playfair",
+  variable: "--font-playfair", // Kept original variable name to match tailwind.config
 });
 
-const montserrat = Montserrat({
+const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-dm-sans",
+  variable: "--font-dm-sans", // Kept original variable name to match tailwind.config
 });
 
 export const metadata: Metadata = {
-  title: "Cosmolite Beauty | Unleash Your Cosmic Glow",
-  description: "Discover high-performance, cruelty-free cosmetics designed to celebrate your unique beauty.",
+  title: "Pageflow Publishing | Where Every Story Finds Its Flow",
+  description: "Discover a curated sanctuary of premium ebooks designed for the modern reader.",
 }
 
 export default function RootLayout({
@@ -28,8 +28,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${playfair.variable} ${montserrat.variable}`}>
-      <body className="bg-[#FFF0F5] text-[#4A2545] antialiased" suppressHydrationWarning>
+    <html lang="en" className={`${lexend.variable} ${inter.variable}`}>
+      <body className="bg-slate-50 text-slate-900 antialiased" suppressHydrationWarning>
         <CartProvider>
           <Navbar />
           <CartDrawer />
