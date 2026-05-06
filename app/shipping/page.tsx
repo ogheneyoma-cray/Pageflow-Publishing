@@ -17,7 +17,7 @@ export default function ShippingPage() {
         <p className="text-slate-700 text-lg mb-8"><strong>Digital Delivery Only</strong></p>
 
         <p className="text-slate-700 text-lg leading-relaxed mb-8">
-          Pageflow Publishing deals exclusively in digital products; therefore, no physical shipping applies.
+          Pisired deals exclusively in digital products; therefore, no physical shipping applies.
         </p>
 
         <h2 className="text-2xl font-bold text-emerald-500 mt-10 mb-4">1. Instant Access</h2>
@@ -32,7 +32,7 @@ export default function ShippingPage() {
 
         <h2 className="text-2xl font-bold text-emerald-500 mt-10 mb-4">3. Support</h2>
         <p className="text-slate-700 text-lg leading-relaxed mb-8">
-          If you do not receive your link within 30 minutes, please check your spam folder or contact contact@PageflowPublishing.com.
+          If you do not receive your link within 30 minutes, please check your spam folder or contact <a href="mailto:info@pisire.com" className="text-emerald-600 hover:underline">info@pisire.com</a>.
         </p>
       </motion.div>
     </main>

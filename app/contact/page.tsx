@@ -22,8 +22,27 @@ export default function ContactPage() {
           <div>
             <h2 className="font-display text-3xl font-bold mb-6">Contact Information</h2>
             <ul className="space-y-4 text-slate-700 text-lg">
-              <li><strong>Email:</strong> contact@PageflowPublishing.com</li>
+              <li>
+                <strong>Email:</strong>{" "}
+                <a href="mailto:info@pisire.com" className="text-emerald-600 hover:underline">
+                  info@pisire.com
+                </a>
+              </li>
+              <li>
+                <strong>Phone:</strong>{" "}
+                <a href="tel:+2348171077143" className="text-emerald-600 hover:underline">
+                  +234 817 107 7143
+                </a>
+              </li>
               <li><strong>Support Hours:</strong> Monday – Friday, 9:00 AM to 6:00 PM</li>
+              <li>
+                <strong>Address:</strong><br />
+                <span className="text-base leading-relaxed">
+                  30 Olabode Aluko Street,<br />
+                  Oworoshoki, Kosofe,<br />
+                  Lagos, Nigeria
+                </span>
+              </li>
             </ul>
           </div>
 

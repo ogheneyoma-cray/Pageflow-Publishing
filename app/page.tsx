@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, BookOpen, Smartphone, PenTool, Mail, Clock } from "lucide-react";
+import { ArrowRight, BookOpen, Smartphone, PenTool, Mail, Clock, Phone } from "lucide-react";
 import { motion, Variants } from "framer-motion";
 
 const services = [
@@ -85,7 +85,7 @@ export default function HomePage() {
             Where Every Story Finds Its Flow.
           </h1>
           <p className="text-slate-700 max-w-2xl text-lg mb-10 leading-relaxed">
-            Discover a curated sanctuary of premium ebooks designed for the modern reader. From transformative business guides to gripping literary journeys, Pageflow Publishing delivers extraordinary knowledge instantly to your favorite device.
+            Discover a curated sanctuary of premium ebooks designed for the modern reader. From transformative business guides to gripping literary journeys, Pisired delivers extraordinary knowledge instantly to your favorite device.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
@@ -116,14 +116,14 @@ export default function HomePage() {
           A Digital Haven for Knowledge Seekers.
         </h2>
         <p className="text-slate-700 text-lg leading-relaxed mb-8">
-          At Pageflow Publishing, we believe that incredible ideas should be accessible without barriers. We bridge the gap between visionary authors and passionate readers by providing a high-quality, digital-first platform. Our mission is to provide professional, well-structured ebooks that deliver real value, allowing your personal and professional growth to flow effortlessly across the digital landscape.
+          At Pisired, we believe that incredible ideas should be accessible without barriers. We bridge the gap between visionary authors and passionate readers by providing a high-quality, digital-first platform. Our mission is to provide professional, well-structured ebooks that deliver real value, allowing your personal and professional growth to flow effortlessly across the digital landscape.
         </p>
         
         <h3 className="font-display text-3xl font-bold mt-12 mb-4">
           Empowering Authors, Inspiring Readers.
         </h3>
         <p className="text-slate-700 text-lg leading-relaxed mb-6">
-          Pageflow Publishing was founded with a singular vision: to break down the traditional barriers of publishing and connect brilliant minds directly with their audience. We recognized a need for a publisher that cared as much about the reading experience—typography, formatting, and cross-device compatibility—as it did about the content itself.
+          Pisired was founded with a singular vision: to break down the traditional barriers of publishing and connect brilliant minds directly with their audience. We recognized a need for a publisher that cared as much about the reading experience—typography, formatting, and cross-device compatibility—as it did about the content itself.
         </p>
         <p className="text-slate-700 text-lg leading-relaxed">
           Today, we are a thriving hub for diverse voices, handling the technical intricacies of digital publishing so our authors can focus on their craft. We are proud to be a 100% digital, eco-friendly company, celebrating the sustainable nature of screen-based reading while delivering uncompromised quality.
@@ -274,7 +274,7 @@ export default function HomePage() {
             variants={fadeInUp}
           >
             <h2 className="font-display text-4xl font-bold mb-6">
-              Weave Your Story With Pageflow.
+              Weave Your Story With Pisired.
             </h2>
             <p className="text-slate-300 leading-relaxed mb-8">
               Are you an author seeking a partner who understands the digital landscape? We offer more than just a platform; we offer a path to global visibility. Our team provides expert developmental editing, bespoke cover design, and distribution to major retailers including Amazon and Apple Books. We empower your voice and maximize your book’s potential in the competitive digital market.
@@ -302,7 +302,11 @@ export default function HomePage() {
             <div className="space-y-4">
               <div className="flex items-center gap-4 text-slate-300">
                 <Mail className="text-emerald-400" />
-                <span>contact@PageflowPublishing.com</span>
+                <span>info@pisire.com</span>
+              </div>
+              <div className="flex items-center gap-4 text-slate-300">
+                <Phone className="text-emerald-400" />
+                <span>+234 817 107 7143</span>
               </div>
               <div className="flex items-center gap-4 text-slate-300">
                 <Clock className="text-emerald-400" />

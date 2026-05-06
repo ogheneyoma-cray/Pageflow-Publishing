@@ -17,7 +17,7 @@ export default function PrivacyPage() {
         <p className="text-slate-700 text-lg mb-8"><strong>Effective Date:</strong> Date</p>
 
         <p className="text-slate-700 text-lg leading-relaxed mb-8">
-          Pageflow Publishing respects your privacy and is committed to protecting your personal data. This policy outlines how we collect and use your information when you visit PageflowPublishing.com.
+          Pisired respects your privacy and is committed to protecting your personal data. This policy outlines how we collect and use your information when you visit pisire.com.
         </p>
 
         <h2 className="text-2xl font-bold text-emerald-500 mt-10 mb-4">1. Data Collection</h2>

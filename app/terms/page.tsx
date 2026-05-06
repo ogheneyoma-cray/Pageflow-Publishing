@@ -17,7 +17,7 @@ export default function TermsPage() {
         <p className="text-slate-700 text-lg mb-8"><strong>Effective Date:</strong> Date</p>
 
         <p className="text-slate-700 text-lg leading-relaxed mb-8">
-          By accessing PageflowPublishing.com, you agree to these Terms and Conditions.
+          By accessing pisire.com, you agree to these Terms and Conditions.
         </p>
 
         <h2 className="text-2xl font-bold text-emerald-500 mt-10 mb-4">1. License</h2>
@@ -27,12 +27,12 @@ export default function TermsPage() {
 
         <h2 className="text-2xl font-bold text-emerald-500 mt-10 mb-4">2. Intellectual Property</h2>
         <p className="text-slate-700 text-lg leading-relaxed mb-8">
-          All content—including text, frameworks, and designs—is the property of Pageflow Publishing or its authors.
+          All content—including text, frameworks, and designs—is the property of Pisired or its authors.
         </p>
 
         <h2 className="text-2xl font-bold text-emerald-500 mt-10 mb-4">3. Prohibited Actions</h2>
         <p className="text-slate-700 text-lg leading-relaxed mb-8">
-          You may not redistribute, resell, or upload Pageflow files to file-sharing platforms.
+          You may not redistribute, resell, or upload Pisired files to file-sharing platforms.
         </p>
       </motion.div>
     </main>

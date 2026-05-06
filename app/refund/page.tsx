@@ -17,7 +17,7 @@ export default function RefundPage() {
         <p className="text-slate-700 text-lg mb-8"><strong>Effective Date:</strong> Date</p>
 
         <p className="text-slate-700 text-lg leading-relaxed mb-8">
-          Pageflow Publishing offers a 14-day satisfaction guarantee on all ebook purchases.
+          Pisired offers a 14-day satisfaction guarantee on all ebook purchases.
         </p>
 
         <h2 className="text-2xl font-bold text-emerald-500 mt-10 mb-4">1. Satisfaction Guarantee</h2>
@@ -27,7 +27,7 @@ export default function RefundPage() {
 
         <h2 className="text-2xl font-bold text-emerald-500 mt-10 mb-4">2. Technical Issues</h2>
         <p className="text-slate-700 text-lg leading-relaxed mb-8">
-          If a file is corrupted or cannot be opened, please contact contact@PageflowPublishing.com. We will attempt to resolve the issue before issuing a refund.
+          If a file is corrupted or cannot be opened, please contact <a href="mailto:info@pisire.com" className="text-emerald-600 hover:underline">info@pisire.com</a>. We will attempt to resolve the issue before issuing a refund.
         </p>
 
         <h2 className="text-2xl font-bold text-emerald-500 mt-10 mb-4">3. Exceptions</h2>

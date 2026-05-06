@@ -16,7 +16,7 @@ export default function AboutPage() {
         </h1>
         <div className="space-y-8 text-slate-700 text-lg leading-relaxed">
           <p>
-            Pageflow Publishing was founded with a singular vision: to break down the traditional barriers of publishing and connect brilliant minds directly with their audience. We recognized a need for a publisher that cared as much about the reading experience—typography, formatting, and cross-device compatibility—as it did about the content itself.
+            Pisired was founded with a singular vision: to break down the traditional barriers of publishing and connect brilliant minds directly with their audience. We recognized a need for a publisher that cared as much about the reading experience—typography, formatting, and cross-device compatibility—as it did about the content itself.
           </p>
           <p>
             Today, we are a thriving hub for diverse voices, handling the technical intricacies of digital publishing so our authors can focus on their craft. We are proud to be a 100% digital, eco-friendly company, celebrating the sustainable nature of screen-based reading while delivering uncompromised quality.

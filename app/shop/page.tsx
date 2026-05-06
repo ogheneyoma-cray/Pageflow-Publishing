@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ShoppingCart } from "lucide-react";
 import { useCart } from "@/context/CartContext";
@@ -8,6 +8,14 @@ import { products } from "@/lib/products";
 
 export default function ShopPage() {
   const { addToCart } = useCart();
+  const [ngnRate, setNgnRate] = useState<number | null>(null);
+
+  useEffect(() => {
+    fetch("https://open.er-api.com/v6/latest/USD")
+      .then((r) => r.json())
+      .then((d) => setNgnRate(d.rates.NGN))
+      .catch(() => setNgnRate(1600));
+  }, []);
 
   return (
     <main className="bg-slate-50 text-slate-900 min-h-screen pt-32 pb-24 px-6 font-body">
@@ -37,7 +45,14 @@ export default function ShopPage() {
               </p>
               <div className="mt-auto border-t border-slate-900/10 pt-6">
                 <div className="flex items-center justify-between mb-4">
-                  <span className="text-2xl font-bold">${product.price.toFixed(2)}</span>
+                  <div>
+                    <span className="text-2xl font-bold">${product.price.toFixed(2)}</span>
+                    {ngnRate && (
+                      <span className="block text-xs text-slate-500 mt-0.5">
+                        ≈ ₦{(product.price * ngnRate).toLocaleString("en-NG", { maximumFractionDigits: 0 })}
+                      </span>
+                    )}
+                  </div>
                   <span className="text-xs text-slate-700/50 uppercase tracking-wider">{product.sku}</span>
                 </div>
                 <button

@@ -4,12 +4,12 @@ import Image from "next/image";
 export default function Logo() {
   return (
     <Link href="/" className="flex items-center">
-      <Image 
-        src="/logo.png" 
-        alt="Pageflow Publishing" 
-        width={120} 
-        height={32} 
-        className="h-8 w-auto"
+      <Image
+        src="/pisired-logo.svg"
+        alt="Pisired"
+        width={150}
+        height={40}
+        className="h-9 w-auto"
         priority
       />
     </Link>

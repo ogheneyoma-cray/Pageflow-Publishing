@@ -18,7 +18,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Pageflow Publishing | Where Every Story Finds Its Flow",
+  title: "Pisired | Where Every Story Finds Its Flow",
   description: "Discover a curated sanctuary of premium ebooks designed for the modern reader.",
 }
 
