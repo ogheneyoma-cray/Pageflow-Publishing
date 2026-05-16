@@ -14,7 +14,7 @@ export default function TermsPage() {
         <h1 className="font-display text-4xl md:text-5xl font-bold mb-10 leading-tight">
           Terms and Conditions
         </h1>
-        <p className="text-slate-700 text-lg mb-8"><strong>Effective Date:</strong> Date</p>
+        <p className="text-slate-700 text-lg mb-8"><strong>Effective Date:</strong> May 14, 2025</p>
 
         <p className="text-slate-700 text-lg leading-relaxed mb-8">
           By accessing pisire.com, you agree to these Terms and Conditions.

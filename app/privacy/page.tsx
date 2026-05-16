@@ -14,7 +14,7 @@ export default function PrivacyPage() {
         <h1 className="font-display text-4xl md:text-5xl font-bold mb-10 leading-tight">
           Privacy Policy
         </h1>
-        <p className="text-slate-700 text-lg mb-8"><strong>Effective Date:</strong> Date</p>
+        <p className="text-slate-700 text-lg mb-8"><strong>Effective Date:</strong> May 14, 2025</p>
 
         <p className="text-slate-700 text-lg leading-relaxed mb-8">
           Pisired respects your privacy and is committed to protecting your personal data. This policy outlines how we collect and use your information when you visit pisire.com.

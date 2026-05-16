@@ -14,7 +14,7 @@ export default function RefundPage() {
         <h1 className="font-display text-4xl md:text-5xl font-bold mb-10 leading-tight">
           Refund Policy
         </h1>
-        <p className="text-slate-700 text-lg mb-8"><strong>Effective Date:</strong> Date</p>
+        <p className="text-slate-700 text-lg mb-8"><strong>Effective Date:</strong> May 14, 2025</p>
 
         <p className="text-slate-700 text-lg leading-relaxed mb-8">
           Pisired offers a 14-day satisfaction guarantee on all ebook purchases.
